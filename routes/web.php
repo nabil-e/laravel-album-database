@@ -14,6 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get("salut/{name}-{id}", function($name,$id){
+Route::get("/{name}-{id}", function($name,$id){
     return "<h1>Salut $name ton id = $id</h1>";
 })->where("name",'[A-Za-z0-9/_-]+')->where("id",'[0-9]+');
