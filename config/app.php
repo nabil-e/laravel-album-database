@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'laravel-album-database'),
+    'name' => env('APP_NAME', 'L.A.D.'),
 
     /*
     |--------------------------------------------------------------------------
@@ -119,7 +119,7 @@ return [
     |
     */
 
-    'key' => env(APP_KEY),
+    'key' => env("APP_KEY"),
 
     'cipher' => 'AES-256-CBC',
 

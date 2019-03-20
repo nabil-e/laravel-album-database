@@ -11,9 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get("/", "DescController@index");
+
 Route::get("/{name}-{id}", function($name,$id){
     return "<h1>Salut $name ton id = $id</h1>";
 })->where("name",'[A-Za-z0-9/_-]+')->where("id",'[0-9]+');
+
+
+
+Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');
