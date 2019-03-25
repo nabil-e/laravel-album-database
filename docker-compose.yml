@@ -16,9 +16,10 @@ services:
     volumes:
       - dbvolume:/var/lib/postgresql/data
     environment:
-      POSTGRES_USER: becode
-      POSTGRES_PASSWORD: becode
-      POSTGRES_DB: becode
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: laravel_albums
+# clear
 
   # Un serveur Adminer pour pouvoir tester les fonctionnalités de la base de données et
   # faire du debugging. Il est joignable avec un simple browser en utilisant http://localhost:9000 .
@@ -39,4 +40,4 @@ services:
 # `docker-compose up`.
 
 volumes:
-dbvolume:
+  dbvolume:
