@@ -6,11 +6,12 @@ use App\Album;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class AlbumTest extends TestCase
 {
     use DatabaseMigrations;
-
+    
     /** @test */
     public function it_will_show_all_albums()
     {
