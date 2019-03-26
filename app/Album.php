@@ -45,5 +45,5 @@ class Album extends Model
      *
      * @var array
      */
-    protected $guarded = array();
+    // protected $guarded = array();
 };
